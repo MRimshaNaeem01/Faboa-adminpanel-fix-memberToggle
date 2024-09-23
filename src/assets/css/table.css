@@ -1,0 +1,139 @@
+.table-container {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.tblStyle {
+  border: 1px solid #c5c5c5;
+  border-radius: 20px !important;
+  border-collapse: separate !important;
+  border-spacing: 1px;
+  overflow: hidden;
+}
+
+thead th,
+tbody td {
+  padding: 10px;
+  text-align: left;
+  box-shadow: inset;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+tbody td {
+  padding: 20px 10px !important;
+
+}
+
+
+tbody td:hover {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  filter: drop-shadow(0px 2px 5px rgba(106, 100, 100, 0.1));
+  z-index: 10;
+}
+
+.fixed-left-col {
+  position: sticky;
+  left: 0;
+  z-index: 10 !important;
+  background-color: white;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  width: 321px !important;
+}
+
+.fixed-left-col:nth-child(1) {
+  background-image: linear-gradient(to right, rgba(244, 244, 244, 0.9), rgba(255, 255, 255, 0));
+  background-position: right;
+  background-size: 8px 100%;
+  background-repeat: no-repeat;
+  z-index: 14 !important;
+}
+
+
+
+.fixed-left-col:nth-child(2) {
+  left: 1px;
+
+}
+
+/* Scrollable Middle Columns */
+.scrollable-col {
+  width: 160px;
+  background-color: transparent;
+  z-index: 0 !important;
+
+}
+
+.scrollable-col:hover {
+  width: 160px;
+  z-index: -999 !important;
+
+}
+
+.scrollable-col:nth-child(2) {
+  left: 1px;
+  width: 219px;
+  z-index: 0 !important;
+}
+
+.scrollable-col:nth-child(3) {
+  left: 1px;
+  width: 192px;
+}
+
+.scrollable-col:nth-child(n+4) {
+  left: 1px;
+  width: 125px;
+}
+
+.fixed-right-col {
+  position: sticky;
+  right: 0;
+  z-index: 999 !important;
+  background-color: white;
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Last Column */
+.fixed-right-col:nth-last-child(1) {
+  right: 0px;
+  width: 80px !important;
+}
+
+.fixed-right-col:nth-last-child(2) {
+  right: 80px;
+  width: 100px !important;
+}
+
+.fixed-right-col:nth-last-child(3) {
+  right: 180px;
+  width: 160px !important;
+
+}
+
+.fixed-right-col:nth-last-child(3) {
+  background-image: linear-gradient(to right, rgba(244, 244, 244, 0.9), rgba(255, 255, 255, 0));
+  background-position: left;
+  background-size: 8px 100%;
+  background-repeat: no-repeat;
+  z-index: 14 !important;
+}
+
+.user-firstname {
+  color: #1F1F1E;
+  font-weight: 500;
+}
+
+.user-firstname-email {
+  font-weight: 400;
+}
